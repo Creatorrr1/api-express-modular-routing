@@ -16,6 +16,7 @@ router.get("/:id", (req, res) => {
 router.post("/", (req, res) => {
   id++;
   const user = { ...req.body, id: id };
+  //   id = user.length + 1;
   users.push(user);
   res.json({ user });
 });
